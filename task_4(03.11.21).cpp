@@ -1,15 +1,21 @@
-#include <iostream>;
-#include <string>;
+#include<iostream>;
+#include<string>;
 
 using namespace std;
 
 int main() {
-	string input, res;
+	string input;
 	getline(cin, input);
-	for (int i = 0; i < input.size(); i++) {
-		if (input[i] != ' ')
-			res += input[i];
+
+	int i = 0;
+	while (i < input.size()) {
+		if (input[i] == ' ' && input[i + 1] == ' ') {
+			input.erase(i + 1, 1);
+		}
+		else {
+			i++;
+		}
 	}
-	cout << res;
-	return 0;
+	
+	cout << input << endl;
 }
