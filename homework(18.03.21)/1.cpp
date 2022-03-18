@@ -20,7 +20,7 @@ int main() {
         num.push_back(tmp);
         k++;
     }
-    num.sort();
+    num.sort(num.begin(), num.end());
     double sum = 0;
     for (double i : num) {
         sum += i;
