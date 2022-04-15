@@ -6,8 +6,8 @@
 using namespace std;
 
 int main() {
-    ifstream fileIn("input.txt");
-    ofstream fileOut("output.txt");
+    ifstream fileIn("INPUT.TXT");
+    ofstream fileOut("OUTPUT.TXT");
 
     vector<int> vec;
     int tmp;
