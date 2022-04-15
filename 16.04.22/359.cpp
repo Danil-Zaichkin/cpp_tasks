@@ -4,8 +4,8 @@
 using namespace std;
 
 int main() {
-    ifstream fileIn("input.txt");
-    ofstream fileOut("output.txt");
+    ifstream fileIn("INPUT.TXT");
+    ofstream fileOut("OUTPUT.TXT");
     int n;
     fileIn >> n;
     long long x = (n * n + 1) / 2;
